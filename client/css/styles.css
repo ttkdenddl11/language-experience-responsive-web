@@ -1,0 +1,289 @@
+.background-element {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(50, 50, 53);
+    z-index: 1;
+    opacity: 0.7;
+}
+
+.background-element-music {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(50, 50, 53);
+    z-index: 1;
+    opacity: 0.85;
+}
+
+.background-element-img-japanese {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0.1;
+    background: url(../images/japan_img.jpg) no-repeat;
+    background-size:cover;
+   
+}
+.background-element-img-chinese {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0.1;
+    background: url(../images/china_img.jpg) no-repeat;
+    background-size: cover;
+   
+}
+.background-element-img-english {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0.1;
+    background: url(../images/english_img.jpg) no-repeat;
+    background-size: cover;
+   
+}
+.background-element-img-music {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0.1;
+    background: url(../images/music.jpg) no-repeat;
+    background-size: cover;
+   
+}
+
+#translator {
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+#traslator h1 {
+    float:right;
+}
+#translator2 {
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+#translator-box {
+    position: fixed;
+    background-color: black;
+    width:800px;
+    height:290px;
+    right:410px;
+    bottom:70px;
+    opacity: 0.5;
+}
+
+#translator-box2 {
+    position: fixed;
+    background-color: black;
+    width:800px;
+    height:290px;
+    left:410px;
+    top:80px;
+    opacity: 0.5;
+}
+
+#translator-icon2 {
+    position: fixed;
+    z-index: 10;
+    left: 950px;
+    top: 120px;
+    width: 250px;
+    height: 250px;
+
+    background-image: url(../images/answer_icon.png);
+    background-size: cover;
+}
+
+#translator-icon1 {
+    position: fixed;
+    z-index: 10;
+    right: 920px;
+    bottom: 80px;
+    width: 250px;
+    height: 250px;
+
+    background-image: url(../images/question_icon.png);
+    background-size: cover;
+}
+
+h1 {
+    float:left;
+}
+textarea {
+    font-size: 20px;
+    font-weight: bold;
+}
+.small-button {
+    margin-left: 5px;
+    float: right;
+    width: 60px;
+    height: 40px;
+    border:none;
+    font-size: 18px; /* 폰트 크기 */
+    font-weight: bold; /* 폰트 굵기 */
+    text-decoration: none; /* 밑줄 제거 */
+    text-align: center;
+    line-height: 40px; /* 버튼 높이와 같게 설정 */
+    transition: background-color 0.3s ease; /* 부드러운 트랜지션 */
+    background-color: white; 
+  }
+  .small-button:hover {
+    background-color: #9ca2a5;/* 호버 시 배경색 변경 */
+  }
+#inputText1, #inputText2 {
+    width: 400px;
+    height: 100px;
+}
+
+button {
+    margin-left: 5px; /* 버튼 간격 조절을 위한 여백 추가 */
+}
+
+.answer {
+    width: 400px;
+}
+.question {
+    width: 400px;
+}
+
+.answer h1 {
+    color: white;
+    float: left;
+}
+
+.question h1 {
+    color: white;
+    float: right;
+}
+
+.button_div {
+    width: 400px;
+}
+
+
+
+.big-button {
+    float: left;
+    width: 120px;
+    height: 40px;
+    border:none;
+    font-size: 18px; /* 폰트 크기 */
+    font-weight: bold; /* 폰트 굵기 */
+    text-decoration: none; /* 밑줄 제거 */
+    text-align: center;
+    line-height: 40px; /* 버튼 높이와 같게 설정 */
+    transition: background-color 0.3s ease; /* 부드러운 트랜지션 */
+    background-color: white; 
+}
+.big-button:hover {
+    background-color: #9ca2a5; /* 호버 시 배경색 변경 */
+  }
+/* 화면 너비가 1000px 이하일 때의 스타일 */
+@media (max-width: 1000px) {
+    #translator {
+        width: 350px;
+        bottom: 110px;
+        right: 10px;
+    }
+    #translator2 {
+        width: 350px;
+        top: 140px;
+        left: 10px;
+    }
+    .question h1 {
+        float: left;
+    }
+    #inputText1, #inputText2 {
+        width: 350px;
+        height: 100px;
+    }
+    .answer {
+        width: 350px;
+    }
+    .question {
+        width: 350px;
+    }
+    .button_div {
+    width: 350px;
+    }
+    #translator-box {
+        width: 400px;
+        bottom: 70px;
+        right: 0px;
+    }
+    #translator-box2 {
+        width: 400px;
+        top: 100px;
+        left: 0px;
+    }
+    #translator-icon1, #translator-icon2 {
+        display: none;
+    }
+}
+
+/* 화면 너비가 1001px 이상일 때의 스타일 */
+@media (min-width: 1001px) {
+    #translator {
+        bottom: 110px; 
+        right: 500px;
+    }
+    #translator2 {
+        top: 140px; 
+        left: 500px;
+    }
+    #tranlator-box {
+        bottom: 70px; 
+        right: 500px;
+    }
+    #translator-box2 {
+        top: 100px; 
+        left: 410px;
+    }
+}
+
+/* 화면 너비가 1001px 이상 1500px 이하일 때의 스타일 */
+@media (max-width: 1500px) and (min-width:1001px){
+    #translator2 {
+        top: 140px;
+        left: 200px;
+    }
+    #translator-box2 {
+        top: 100px; 
+        left: 110px;
+    }
+    #translator {
+        bottom: 110px;
+        right: 200px;
+    }
+    #translator-box {
+        bottom: 70px; 
+        right: 110px;
+    }
+    #translator-icon1 {
+        right: 630px;
+    }
+    #translator-icon2 {
+        left: 650px;
+    }
+}
